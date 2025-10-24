@@ -1,21 +1,21 @@
-# 🤖 Koid — The Local AI Soundboard & Vision Personality System
+# Koid — The Local AI Soundboard & Vision Personality System
 
 Koid is a **fully local**, privacy-preserving **voice + vision interaction panel** designed for **Unitree G1 demos, robotics showcases, telepresence, and live audience interactions**.
 
 It brings together:
 
-- 🎤 **Real-time speech** using **Piper TTS (Ryan voice)**
-- 🗂️ A **Soundboard** for quick reaction audio clips
-- 💬 **Text-to-Speech input** with automatic recent history memory
-- 📸 **Webcam-based vision analysis** using **Ollama (LLaVA / Llama 3.2-Vision)**
-- 😇 **Compliment** mode or 😈 **Roast** mode — spoken aloud instantly
-- 🔒 All processing is **100% local** — no cloud, no tracking.
+- **Real-time speech** using **Piper TTS (Ryan voice)**
+- A **Soundboard** for quick reaction audio clips
+- **Text-to-Speech input** with automatic recent history memory
+- **Webcam-based vision analysis** using **Ollama (LLaVA / Llama 3.2-Vision)**
+- **Compliment** mode or **Roast** mode — spoken aloud instantly
+- All processing is **100% local** — no cloud, no tracking.
 
 Designed for *demos that feel alive* and interactions that feel *personal*.
 
 ---
 
-## ✨ Features At a Glance
+## Features At a Glance
 
 | Feature | Description |
 |--------|-------------|
@@ -29,7 +29,7 @@ Designed for *demos that feel alive* and interactions that feel *personal*.
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 robobot/
@@ -52,7 +52,7 @@ robobot/
 
 ---
 
-## 🧠 Requirements
+## Requirements
 
 | Component | Purpose | Install |
 |---------|---------|---------|
@@ -64,7 +64,7 @@ robobot/
 
 ---
 
-## 🚀 Setup
+## Setup
 
 ### 1. Clone and enter project
 ```bash
@@ -121,7 +121,7 @@ Modify Piper length scale:
 
 ---
 
-## 😇 Compliment & 😈 Roast Prompt Personality
+## Compliment & Roast Prompt Personality
 
 Edit tone inside:
 
@@ -131,7 +131,7 @@ backend/vision.py
 
 ---
 
-## 🎧 Adding Custom Soundboard Clips
+## Adding Custom Soundboard Clips
 
 Place `.mp3` files in:
 
@@ -143,7 +143,7 @@ They auto-appear in the UI.
 
 ---
 
-## 🧩 Known Good Hardware Setup
+## Known Good Hardware Setup
 
 | Component | Recommended |
 |----------|-------------|
@@ -153,7 +153,7 @@ They auto-appear in the UI.
 
 ---
 
-## 💡 Future Expansion Ideas
+## Future Expansion Ideas
 
 - Voice-triggered conversation mode
 - Animated expression / arm sync
@@ -161,7 +161,7 @@ They auto-appear in the UI.
 
 ---
 
-## 🔥 Credits
+## Credits
 
 Created and engineered for **RoboStore**.
 
