@@ -1,0 +1,6 @@
+[
+    { "label": "Intro", "text": "I am Koid, a Unitree G1 robot from RoboStore." },
+    { "label": "Welcome", "text": "Welcome to the demo. Feel free to press any phrase to make me speak." },
+    { "label": "Capabilities", "text": "I am capable of walking, balancing, grasping objects, and performing human interaction tasks." },
+    { "label": "Ask", "text": "Would you like to see me perform a movement or demonstration?" }
+  ]

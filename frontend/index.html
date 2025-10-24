@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Koid Soundboard</title>
+    <link rel="stylesheet" href="/assets/app.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Koid Soundboard</h1>
+      <p class="sub">Tap a sound or enter text to speak.</p>
+
+      <!-- Sounds -->
+      <section class="card">
+        <h2>Sounds</h2>
+        <div
+          id="sounds"
+          class="sound-grid"
+          data-empty="No sounds found in media/sounds."
+        ></div>
+      </section>
+
+      <!-- TTS -->
+      <section class="card">
+        <h2>Text to Speech</h2>
+        <form id="tts-form">
+          <textarea
+            id="tts-text"
+            placeholder="Type what Koid should say…"
+            rows="3"
+            required
+          ></textarea>
+          <div class="actions">
+            <button id="speak-btn" class="btn" type="submit">Speak</button>
+            <span id="speak-status" class="muted"></span>
+          </div>
+        </form>
+      </section>
+
+      <!-- Player (for stock sounds) -->
+      <section class="card">
+        <audio id="player" controls preload="none" class="player" src=""></audio>
+      </section>
+
+      <!-- Recent (Last 5 spoken texts; replay uses /api/say) -->
+      <section class="card">
+        <h2>Recent</h2>
+        <ul
+          id="recent-list"
+          class="recent-list"
+          data-empty="Nothing yet."
+        ></ul>
+      </section>
+
+      <!-- Webcam + Ollama (compliment / roast only) -->
+      <section class="card">
+        <h2>Vision</h2>
+
+        <!-- Controls: only preview toggle + action buttons -->
+        <div class="actions" style="gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+          <label style="display:inline-flex; align-items:center; gap:0.4rem;">
+            <input type="checkbox" id="toggle-preview" />
+            Show camera preview
+          </label>
+
+          <span class="spacer"></span>
+
+          <button id="analyze-compliment" class="btn" type="button">Compliment</button>
+          <button id="analyze-roast" class="btn danger" type="button">Roast</button>
+
+          <span id="vision-status" class="muted"></span>
+        </div>
+
+        <!-- Hidden capture elements (no separate buttons) -->
+        <div class="cam-row" id="cam-wrap" style="display:none; margin-top:0.75rem;">
+          <video id="cam" autoplay playsinline muted class="cam"></video>
+        </div>
+        <canvas id="snapshot" width="640" height="480" hidden></canvas>
+      </section>
+    </main>
+
+    <!-- tiny toast modal -->
+    <dialog id="toast">
+      <div id="toast-msg"></div>
+      <button id="toast-close" class="btn-outline" autofocus>Close</button>
+    </dialog>
+
+    <script src="/assets/app.js" type="module"></script>
+  </body>
+</html>
